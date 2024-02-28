@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8"> <!--para la codificacion de caracteres del documento -->
+        <meta name="viewport" content="width=device-width"> <!--Para que se adapte a dispositivos mobiles-->
+        <meta name="robots" content="index, follow"> <!--se utiliza para permitir que los motores de búsqueda indexen la página y sigan los enlaces dentro de ella-->
+        <meta name="theme-color" content="#09f"><!--En algunos sitios web sirve para cambiar el color del "header de la pagina web"-->
+        <link rel="icon" type="imagen/jpg" href="/src/imagen.jpg"><!--Para colocar el favicon-->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Etiquetas de SEO (profundizar más) -->
+        <title>Portafolio midudev</title><!--Titulo de la pagina que aparece cuando se busca (SEO)-->
+        <meta name="descripcion" content="Portafolio midudev, 15 años de experiencia como ingeniero de software" > <!--Descripción de la pagina que aparece cuando se busca (SEO)-->
+
+        <!-- Etiquetas The Open Graph protocol para la visualizacion en diferentes redes sociales (Profundizar más)  -->
+        <meta property="og:title" content="Portafolio de un ingeniero de software" />
+        <meta property="og:image" content="imagen.jpg" />
+        <meta property="og:description" content="Portafolio midudev, 15 años de experiencia como ingeniero de software." />
+    </head> 
+
+    <body> 
+        <header>  
+            <h1>Portafolio de @midudev</h1>
+            <nav>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="https://www.twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
+            </nav>
+        </header> 
+        <main>
+            <video controls poster="" src="src/you'll never walk alone.mp4"></video>
+            <audio controls src="src/Happy Birthday.mp3"></audio>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RclOOWkTvG4?si=gO4SUFKFvul0a5OB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <dialog id="dialog">
+                <h1>¿Sabias que puedes abrir una modal así?</h1>
+                <p>¡Y es totalmente nativo!</p>
+                <button id="cerrar">Cerrar modal</button>
+            </dialog>
+            <butto id="mostrar">Ver más información</button>
+            <script>
+                window.mostrar.addEventListener('click', () =>{
+                    window.dialog.showModal()
+                })
+                window.cerrar.addEventListener('click', () =>{
+                    window.dialog.close()
+                })
+            </script>
+            <p class="father">+15 años de experiencia como  <strong class="child">Ingeniero de Software.</strong> Creador y divulgador de programación</p>
+            <h2 id="experiencia">Experiencia</h2>
+            <ul>
+                <li>Adevinta - 2022</li>
+                <li>Hubii - 2020</li>
+                <li>Nacencia - 2020</li>
+            </ul>
+            <a download href="src/imagen.jpg">
+            <img
+                id="photo-imagen"
+                width=100
+                height=100
+                title="Foto" 
+                alt="descripcion de la imagen" 
+                src="src/imagen.jpg">
+            <img
+                hidden
+                id="photo-imagen"
+                width=100
+                height=100
+                title="Foto" 
+                alt="descripcion de la imagen" 
+                src="/imagen.jpg">
+            </a>
+            <a download href="src/imagen.jpg">descargar imagen</a>
+            <h2 id="proyectos">Proyectos realizados</h2>
+            <aside>
+                <header>
+                    <h3>Mis tecnologias favoritas</h3>
+                </header>
+                <ol type="A">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                </ol>
+            </aside>
+            <section>
+                <article>
+                    <header>
+                        <h4>Sitio Web Corporativo</h4>
+                    </header>
+                    <p>
+                        Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.
+                    </p>
+                    <footer> <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small></footer>
+                    <!-- Etiqueta small representa texto secundario, como una nota al pie o un texto menos relevante -->
+                </article>
+                <article>
+                    <header>
+                        <h4>Sitio Web Corporativo</h4>
+                    </header>
+                    <p>
+                        Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.
+                    </p>
+                    <footer> <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small></footer>
+                </article>
+                <article>
+                    <header>
+                        <h4>Sitio Web Corporativo</h4>
+                    </header>
+                    <p>
+                        Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.
+                    </p>
+                    <footer> <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small></footer>
+                </article>
+            </section>
+            <section>
+                <h2>Preguntas frecuentes</h2>
+                <details>
+                    <summary>¿Qué estudios tienes? </summary>
+                    <p>Estudie en la universida del Cauca Ingenieria en Automática Industrial </p>
+                </details>
+                <details>
+                    <summary>¿Cuáles son tus hobbies? </summary>
+                    <p>Me gusta el futbol y la lectura </p>
+                </details>
+                <details open >
+                    <summary>¿Cuáles es tu lenguaje favorito? </summary>
+                    <p>html XD </p>
+                </details>
+            </section>
+            <section>
+                <h2>Formulario de contacto</h2>
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend>Informacion personal</legend>
+                        <label>Nombre:
+                            <input 
+                                type="text"
+                                name="name"
+                                placeholder="escriba nombre"
+                                requerid
+                            >
+                        </label>
+                        <label for="email">Correo:</label>
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="escriba su email"
+                            requerid
+                        >
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informacion adicional</legend>
+                        <label>Telefono:
+                            <input 
+                                type="tel"
+                                name="telefone"
+                                placeholder="escriba su telefono"
+                                requerid
+                                pattern="[0-9]{9}" 
+                                title="solo numeros del 0 al 9"
+                            >
+                        </label>
+                        <label for="fecha">Fecha:</label>
+                        <input 
+                            type="date"
+                            id="fecha"
+                            name="fecha"
+                            placeholder="escriba su fecha"
+                            requerid
+                        >
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros</legend>
+                        <div>
+                            <label for="why">¿Por qué quieres contactar</label>
+                            <select name="why" id="why">
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Más Información</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="terms">¿Aceptas los términos?</label>
+                            <input type="checkbox" id="terms" name="terms">
+                        </div>
+                        <div>
+                            <datalist id="languages">
+                                <option value="JavaScript"></option>
+                                <option value="Python"></option>
+                                <option value="Java"></option>
+                                <option value="C#"></option>
+                            </datalist>
+                            <label>¿Con que lenguaje quieres que te ayude?</label>
+                            <input list="languages" name="programas">
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Enviar contacto">
+                    <button>Enviar contacto</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            Copyright &copy 2023 - portafolio 
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    background: #dbfbff ; /*dfgfgrrgr*/    
+}
+
+h1 {
+    /* color: rgb(0 0 0 / 50%); forma moderna de rgb, rgba ya esta obsoleto */
+}
+
+.father {
+    border: 2px solid blue;
+}
+
+.child {
+    border: inherit; /*Para forzar la herencia de un elemento padre a uno hijo*/
+}
+
